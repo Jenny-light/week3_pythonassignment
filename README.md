@@ -21,8 +21,7 @@ The program only applies the discount if it is **20% or higher**, otherwise, it 
 ---
 
 ##  Code Example
-
---python
+```python
 def calculate_discount(price, discount_percent):
     if discount_percent >= 20:
         return price - (discount_percent / 100) * price
@@ -38,6 +37,10 @@ final_price = calculate_discount(original_price, discount_percent)
 
 if discount_percent >= 20:
     print(f"Final price after {discount_percent}% discount: ${final_price:.2f}")
+else:
+    print(f"No discount applied. Price remains: ${final_price:.2f}")
+
+
 
 ## Example Run
 Enter the original price of the item: 100
@@ -56,5 +59,7 @@ linkedin: https://www.linkedin.com/in/jennifer-omoregie-83388232a?utm_source=sha
 
 
 
-else:
+
+
+
     print(f"No discount applied. Price remains: ${final_price:.2f}")
