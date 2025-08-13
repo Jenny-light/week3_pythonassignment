@@ -20,46 +20,9 @@ The program only applies the discount if it is **20% or higher**, otherwise, it 
 
 ---
 
-##  Code Example
-```python
-def calculate_discount(price, discount_percent):
-    if discount_percent >= 20:
-        return price - (discount_percent / 100) * price
-    else:
-        return price
-
-# User input
-original_price = float(input("Enter the original price of the item: "))
-discount_percent = float(input("Enter the discount percentage: "))
-
-# Calculate and display result
-final_price = calculate_discount(original_price, discount_percent)
-
-if discount_percent >= 20:
-    print(f"Final price after {discount_percent}% discount: ${final_price:.2f}")
-else:
-    print(f"No discount applied. Price remains: ${final_price:.2f}")
-
-
-
-## Example Run
-Enter the original price of the item: 100
-Enter the discount percentage: 25
-Final price after 25% discount: $75.00
-
 ##  Requirements
 Python 3.x installed on your system.
 
 ## Author
 Jennifer
 linkedin: https://www.linkedin.com/in/jennifer-omoregie-83388232a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
-
-
-
-
-
-
-
-
-
-    print(f"No discount applied. Price remains: ${final_price:.2f}")
